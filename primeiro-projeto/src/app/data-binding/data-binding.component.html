@@ -1,0 +1,28 @@
+<section>
+  <article>
+    <h3>Interpolation / Interpolação</h3>
+    <p>String renderizada com interpolação: <a href="{{ url }}"> {{ url }}</a> </p>
+    <p>Interpolação com calculos direto na declaração {{1 +1}}</p>
+    <p>Resultado de 1+1 não é {{1+1 + getValor()}}</p>
+    <p>Curso Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
+
+  </article>
+
+  <article>
+    <img src="{{ urlImage }}"> <!--utilizando a mesma forma de declaração vista de interpolation. É possivel fazer o bindding usando [] na tag html desejada-->
+    <img [src]="urlImage">
+    <img bind-src="urlImage" >
+
+  </article>
+
+<!-- class and style binding -->
+  <article>
+    <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma classe
+      <select>
+        <option value="alert-sucess">Sucesso</option>
+      </select>
+    </div>
+  </article>
+</section>
